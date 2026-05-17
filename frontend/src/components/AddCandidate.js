@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-
-const API = 'http://localhost:5001';
+const API = process.env.REACT_APP_API_URL;
 
 export default function AddCandidate({ onSuccess }) {
   const [form, setForm] = useState({ name: '', email: '', experience: '', bio: '' });

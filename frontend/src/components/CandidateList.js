@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const API = 'http://localhost:5001';
+const API = process.env.REACT_APP_API_URL;
 
 export default function CandidateList() {
   const [candidates, setCandidates] = useState([]);
